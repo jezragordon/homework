@@ -1,0 +1,108 @@
+/*General Styles*/
+
+ul {
+  line-height: 28px;
+  font-size: 1.3em;
+}
+
+h1 {
+  margin: 10px 0 40px 0;
+}
+
+h3 {
+  font-size: 20pt;
+  padding-top: 20px;
+}
+
+h4 {
+  letter-spacing: 2px;
+}
+
+p {
+  margin: 0 0 30px 0;
+  line-height: 25px;
+  font-family: serif;
+  font-size: 16pt;
+  font-weight: 500;
+}
+
+img {
+  max-width: 60%;
+  min-width: 250px;
+  display: block;
+  margin: 30px auto;
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+hr {
+  border-top: 2px solid #222222;
+  margin: 0 0 17px 0;
+}
+/*Structure Styles*/
+
+body {
+  background-color: #ddd;
+}
+
+#wrapper {
+  max-width: 890px;
+  margin: 30px auto;
+  font-family: sans-serif;
+  font-size: 18px;
+  border: 1px solid #222222;
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  color: #000;
+  font-weight: 700;
+}
+
+nav a {
+  color: #000;
+}
+
+section {
+  padding: 0 50px;
+}
+
+footer {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+/*Special Styles*/
+
+.active {
+  text-decoration: none;
+  font-style: italic;
+  color: #222222;
+}
+
+.nonactive {
+  font-weight: bold;
+  color: #222222;
+}
+
+.listdate {
+  font-size: .8em;
+}
+
+#listfont {
+  font-family: times;
+  font-size: 1em;
+}
+
+.thickrule {
+  border-top: 5px solid #000000;
+  margin-bottom: 50px;
+}
+
+footer .thickrule {
+  margin-top: 60px;
+}
