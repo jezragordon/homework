@@ -1,10 +1,7 @@
+/*Structure Styles*/
+
 body {
 background-color: #ddd;
-}
-
-img {
-  padding: 5px;
-  border-top: 1px solid #000;
 }
 
 #wrapper {
@@ -17,7 +14,23 @@ img {
 	background-color:#f6f6f6;
 }
 
+header {
+  text-align: center;
+}
 
+section {
+  padding: 0 50px;
+}
+
+footer {
+  text-align: center;
+  margin:30px 0 30px 0;
+}
+
+
+
+
+/*Nav Styles*/
 
 .active {
   text-decoration: none;
@@ -30,20 +43,24 @@ img {
   color: #222222;
 }
 
+nav {
+  color:#000;
+  font-weight:700;
+} 
+
+nav a{
+  color:#000;
+}
+
+
+/*General Styles*/
+
 p {
   margin: 0 0 30px 0;
   line-height: 25px;
   font-family: serif;
   font-size: 16pt;
   font-weight:500;
-}
-
-header {
-	text-align: center;
-}
-
-section {
-  padding: 0 50px;
 }
 
 hr {
@@ -60,6 +77,8 @@ h1 {
 	margin: 10px 0 40px 0;
 }
 
+
+/*Special Styles*/
 
 #avatar {
 	float:right;
@@ -84,20 +103,6 @@ h1 {
   margin: 30px auto;
   padding: 5px;
   border: 1px solid #000;
-}
-
-footer {
-	text-align: center;
-	margin:30px 0 30px 0;
-}
-
-nav {
-  color:#000;
-  font-weight:700;
-} 
-
-nav a{
-	color:#000;
 }
 
 .thickrule {
