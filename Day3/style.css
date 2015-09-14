@@ -1,0 +1,216 @@
+body {
+  max-width: 100%;
+  font-family: 'open sans', sans-serif;
+}
+
+header {
+  background-image: url("http://raw.githubusercontent.com/ga-students/FEWDBOS18/master/Week_02_Advanced_CSS/025_advanced_css/starter_code/images/header_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  min-height: 600px;
+  padding: 1% 5%;
+}
+
+/*Slide-in logo*/
+
+h1 {
+  color: #fff;
+  margin: 10px 0 210px 0;
+  font-weight: 800;
+  font-size: 35px;
+  position: relative;
+  -webkit-animation: mymove 5s;
+  animation: mymove 5s;
+  animation-timing-function: ease;
+}
+
+/*Fade-in Tagline in two parts via span IDs*/
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 45px;
+  color: #fff;
+}
+
+/*Slide-in CTA button in header with transition on hover*/
+
+#getitnow_button {
+  width: 150px;
+  background-color: #f9e42e;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 35px;
+  margin: 110px auto 200px auto;
+  border-radius: 5%;
+  -webkit-box-shadow: 9px 10px 46px -9px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 9px 10px 46px -9px rgba(0, 0, 0, 0.51);
+  box-shadow: 9px 10px 46px -9px rgba(0, 0, 0, 0.51);
+  position: relative;
+  -webkit-animation: mymove 8s;
+  /* Chrome, Safari, Opera */
+  
+  animation: mymove 8s;
+  animation-timing-function: ease;
+  transition: background-color 0.4s ease;
+}
+
+#getitnow_button:hover {
+  background-color: white;
+}
+
+/*Benefits with pseudo-class bolding*/
+
+#benefits {
+  padding: 2% 40% 2% 10%;
+  background-color: #f0efef;
+  font-weight: 300;
+  font-size: 18px;
+  color: #606161
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #121212
+}
+
+/*Block quote area*/
+
+#blockquote {
+  background-image: url('https://raw.githubusercontent.com/ga-students/FEWDBOS18/master/Week_02_Advanced_CSS/025_advanced_css/starter_code/images/testimonial_bg.jpg');
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  padding: 2% 28%;
+  font-size: 30px;
+}
+
+#blockquote p {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+}
+
+/*Call to action button with transition on hover*/
+
+#cta {
+  background-color: #f9e42e;
+  padding: 15px
+}
+
+#signupnow-button {
+  width: 200px;
+  padding: 15px 20px;
+  border-radius: 5%;
+  background-color: #033048;
+  margin: 10px auto;
+  color: #fff;
+  font-size:17px;
+  text-align: center;
+  font-weight: 800;
+  -webkit-box-shadow: 9px 10px 46px -9px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 9px 10px 46px -9px rgba(0, 0, 0, 0.51);
+  box-shadow: 9px 10px 46px -9px rgba(0, 0, 0, 0.51);
+    transition: background-color 0.5s ease;
+}
+
+#signupnow-button:hover {
+  background-color: white;
+  color: #000;
+}
+
+/*Footer with logo, social media buttons with transparent hover and transition, and copyright*/
+
+footer {
+  background-color: #121212;
+  padding: 1px;
+}
+
+h4 {
+  color: #f9e42e;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+nav {
+  text-align:center;
+}
+
+#twit{
+  padding:0 10px;
+  width:30px;
+  opacity: 1; filter: alpha(opacity=100);
+  transition: opacity 0.5s ease;
+}
+
+#twit:hover{
+  opacity: 0.3; filter: alpha(opacity=30);
+}
+
+#face{
+  padding:0 30px 0 10px;
+  width:10px;
+   opacity: 1; filter: alpha(opacity=100);
+  transition: opacity 0.5s ease;
+}
+
+#face:hover{
+  opacity: 0.3; filter: alpha(opacity=30);
+
+}
+
+footer p {
+  margin-top:60px;
+  color:#fff;
+  text-align:center;
+  font-size:15px;
+}
+
+  /*responsive stylings*/
+  
+/*@media only screen and (max-width: 480px) {
+    
+ #headline1 {
+  -webkit-animation-name: none;
+  animation-name: none;
+color:#fff;
+}
+
+#headline2 {
+  -webkit-animation-name: none;
+  animation-name: none;
+color:#fff;
+}
+}*/
+  
+
+
+
+/*Keyframes for animation defined*/
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes mymove {
+  from {
+    left: -800px;
+  }
+  to {
+    left: 0px;
+  }
+}
+/* Standard syntax */
+
+@keyframes mymove {
+  from {
+    left: -2500px;
+  }
+  to {
+    left: 0px;
+  }
+  
