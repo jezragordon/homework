@@ -71,6 +71,10 @@ h2 {
   color: #606161
 }
 
+#benefits ul :nth-child(even){
+  font-weight:800;
+}
+
 h3 {
   font-size: 28px;
   font-weight: 600;
