@@ -1,10 +1,16 @@
+   a{
+    cursor: pointer;
+    color:inherit;
+    text-decoration: none;
+  }
+
 body {
   max-width: 100%;
   font-family: 'open sans', sans-serif;
 }
 
 header {
-  background-image: url("http://raw.githubusercontent.com/ga-students/FEWDBOS18/master/Week_02_Advanced_CSS/025_advanced_css/starter_code/images/header_bg.jpg");
+  background-image: url('images/header_bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
@@ -25,15 +31,33 @@ h1 {
   animation-timing-function: ease;
 }
 
-/*Fade-in Tagline in two parts via span IDs*/
+/*Fade-in Tagline*/
 
 h2 {
   text-align: center;
   font-weight: 600;
   font-size: 45px;
   color: #fff;
+  animation-name: tagline;
+  animation-duration: 6s
 }
 
+
+/*Keyframes for animation defined*/
+
+/*Fade in*/
+
+@-webkit-keyframes tagline {
+     from {color: rgba(255,255,255,.1);}
+     to {color: rgba(255,255,255,.9);}
+}
+
+@keyframes tagline {
+    from {color: rgba(255,255,255,.1);}
+    to {color: rgba(255,255,255,.9);}
+}
+
+/*Slide-in CTA button in header with transition on hover*/
 /*Slide-in CTA button in header with transition on hover*/
 
 #getitnow_button {
@@ -84,7 +108,7 @@ h3 {
 /*Block quote area*/
 
 #blockquote {
-  background-image: url('https://raw.githubusercontent.com/ga-students/FEWDBOS18/master/Week_02_Advanced_CSS/025_advanced_css/starter_code/images/testimonial_bg.jpg');
+  background-image: url('images/testimonial_bg.jpg');
   color: white;
   text-align: center;
   font-weight: 300;
@@ -176,24 +200,6 @@ footer p {
   font-size:15px;
 }
 
-  /*responsive stylings*/
-  
-/*@media only screen and (max-width: 480px) {
-    
- #headline1 {
-  -webkit-animation-name: none;
-  animation-name: none;
-color:#fff;
-}
-
-#headline2 {
-  -webkit-animation-name: none;
-  animation-name: none;
-color:#fff;
-}
-}*/
-  
-
 
 
 /*Keyframes for animation defined*/
@@ -217,4 +223,3 @@ color:#fff;
   to {
     left: 0px;
   }
-  
