@@ -1,0 +1,101 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="form-styles.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+</head>
+
+<body>
+  <section>
+    <h2>Please register for your say in paradise below:</h2>
+    <form>
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" required>
+      <br>
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" required>
+      <br>
+      <br>
+      <label for="email">Email Address</label>
+      <div id="email-address">
+        <input type="email" name="email" required>
+      </div>
+      <br>
+      <br>
+      <label for="phoneNumber">Phone Number</label>
+      <div id="phoneNumber">
+        <input type="tel" name="phoneNumber" required>
+      </div>
+      <br>
+      <br>
+      <div id="address">
+        <label for="Address1">Address 1</label>
+        <input type="text" name="address-1" required>
+        <label for="Address2">Address 2</label>
+        <input type="text" name="address-2">
+        <br>
+        <br>
+        <label for="city">City</label>
+        <input type="text" name="city" required>
+        <br>
+        <br>
+        <label for="state">State or Region</label>
+        <input type="text" name="state" required>
+        <br>
+        <br>
+        <label for="Country">Country</label>
+        <input type="text" name="country" required>
+        <br>
+        <br>
+        <label for="postalCode">Postal Code</label>
+        <input type="text" name="postalCode" placeholder="Postal Code" required>
+      </div>
+      <br>
+      <br>
+      <div id="flight-info">
+        <label for="flight-arrival-date">Flight Date</label>
+        <input type="text" name="flight-arrival-date" placeholder="Month/Day/Year" required>
+        <label for="flight-arrival">Flight Arrival</label>
+        <input type="text" name="flight-arrival" placeholder="What time does your flight land?">
+        <br>
+        <br>
+        <label for="airline">Airline</label>
+        <input type="text" name="airline" placeholder="What airline are you using?">
+        <br>
+        <br>
+        <label for="flight-number">Flight Number</label>
+        <input type="text" name="flight-number" placeholder="Type your flight number">
+
+        <br>
+        <br>
+      </div>
+      <div class="guests">
+        <label for="Guest-1">Guest-1</label>
+        <input type="text" name="Guest-1" placeholder="Register guests besides you">
+        <div class="showButton">Add another guest</div>
+      </div>
+      <input type="submit" value="SUBMIT" id="submit">
+      <br>
+      <br>
+      </div>
+      </div>
+    </form>
+  </section>
+  <div id="afterFormSubmit">
+    <div id="confirmLeft">
+    <h3>Thank you!</h3>
+    <p> Thank you for registering for your stay at The Abaco Club.  We look forward to welcoming you to paradise very soon.</p>
+    <p>If  you have any questions, or would like like our concierge to make arrangements to help make your stay more enjoyable, please contact us at info@theabacoclub.com, or call +1.242.367.0077.</p>
+    </div>
+    <div id="confirmRight">
+      <img src="http://www.southworthdevelopment.com/GolfeMailerImages/TAC/seeyousoon.png">
+    </div>
+</div>
+  <footer>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

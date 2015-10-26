@@ -1,0 +1,106 @@
+body {
+  background-color: #36b8ba;
+  transition: background-color 2s ease;
+  color: #fff;
+  font-family: lato;
+  font-size: 28px;
+}
+
+.whiteBackground {
+  background-color: #fff;
+}
+
+h2 {
+  padding: 30px 0.5em 10px 5%;
+}
+
+label {
+  clear: left;
+  display: block;
+  float: left;
+  margin: 10px 0 1em 0;
+  padding: 0 0.5em 0 0;
+  text-align: right;
+  width: 8em;
+}
+
+input {
+  float: left;
+  margin: 10px 0.5em 0.5em 0;
+  padding: 10px;
+}
+
+#submit {
+  clear: both;
+  margin: 10px 0 .100px 8%;
+  width: 30%;
+  background-color: #fff;
+  color: #36b8ba;
+  font-weight: 600;
+  font-size: .75em;
+  border-style: none;
+  margin-bottom: 50px;
+}
+
+#submit:hover {
+  background-color: rgb(174, 174, 174);
+  color: #fff;
+  cursor: pointer;
+}
+
+.showButton {
+  float: left;
+  font-size: 20px;
+  border-style: none;
+  background-color: rgb(174, 174, 174);
+  color: #fff;
+  font-family: lato;
+  font-weight: 600;
+  padding: 7px 15px;
+  margin: 10px 0 18px 0;
+  cursor: pointer;
+}
+
+.showButton:hover {
+  background-color: #fff;
+  color: #36b8ba;
+}
+
+#afterFormSubmit{
+  display:none;
+  color: #36b8ba;
+  font-size:.7em;
+}
+
+h3 {
+  margin: 50px 0 0 35%;
+  font-size:1.5em;
+}
+
+#confirmLeft {
+  margin: 0 0 0 15%;
+  width:35%;
+  float:left;
+}
+
+#confirmRight{
+  float:left;
+  width:40%;
+  margin: 30px 5% 0 0;
+}
+
+#confirmRight img {
+  width:90%;
+  min-width:300px
+}
+
+#afterFormSubmit p{
+	margin-top: 15px;
+}
+
+/*footer {
+  height: 10px;
+  background-color: #ccc;
+  position:relative;
+  margin-top: 700px;
+}*/
