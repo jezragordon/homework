@@ -1,14 +1,65 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 4px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.05); 
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,0,0,0.4); 
+}
+
+
+html, body{
+height:100%;
+  }
+
 body {
-	background-color:#04b1ad;
+  background-image: url("survey-bg.jpg");
+  background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
 	font-family: lato;
 	color: #fff;
+  -webkit-transition: background-image 7.0s ease;
+  -moz-transition: background-image 7.0s ease;
+  -o-transition: background-image 7.0s ease;
+  transition: background-image 7.0s ease;
 }
+
+#firstName, #lastName, textarea{
+  background-color: rgba(255, 255, 255, .4);
+  border-style: none;
+}
+
+#wrapper{
+  width:100%;
+}
+
 
 #logo-container img {
   width:120px;
   margin: 20px 0 40px 5%;
 }
 
+input, button, a{
+  cursor:pointer;
+}
+
+input:nth-child(6){
+  clear:both
+}
 
 h1 {
 	font-family: lato;
@@ -18,30 +69,207 @@ h1 {
 	text-align: left;
 	margin: 20px .5% 20px .8%;
 }
+
+h2 {
+  font-weight:600;
+  font-size:20px;
+  margin-top:20px;
+}
+
 section {
 	text-align: center;
 	margin:0 8%;
-
-
-}
-button {
-	color:#fff;
-	font-size: 9em;
-	background-color: rgb(174, 174, 174);
-	border-style:none;
-	width: 250px;
-	padding: 50px 0;
-	margin:30px .5%;
-	float:left;
-	display:inline-block;
-	font-weight:300;
-	border-radius: 5%
 }
 
-button:hover{
+section #submitButton{
+  font-size:1.5em;
+  clear:both;
+  float:left;
+  text-align:center;
+  margin-left: .8%; 
+    webkit-border-radius:5px;
+  border-radius:5px;
+
+}
+
+#provideName input{
+  float:left;
+  height:50px;
+  margin-right:5%;
+  margin-top:30px;
+  width:30%;
+  min-width:150px;
+  font-size:22px;
+
+  padding:5px;
+}
+
+#provideName button{
+  clear:both;
+  float:left;
+  margin-top:30px;
+  width:30%;
+    webkit-border-radius:5px;
+  border-radius:5px;
+}
+
+#provideName input:hover{
+  cursor: text;
+}
+
+/*Hide these sections*/
+
+#choosePath{
+display:none;
+}
+
+#questionArrival{
+  display:none;
+}
+
+#rateAccommodations{
+  display:none;
+}
+
+#explainExperienceContainer{
+  display:none;
+}
+
+#explainArrivalContainer{
+  display:none;
+}
+
+#favoriteActivities{
+    display:none;
+}
+
+#rateArrival{
+  display:none;
+}
+
+#explainArrivalContainer{
+  display:none;
+}
+
+#rateCheckIn{
+  display:none;
+}
+
+#explainArrivalContainer{
+  display:none;
+}
+
+#rateService{
+  display:none;
+}
+
+#explainExperienceContainer{
+  display:none;
+}
+
+#explainCheckInContainer {
+  display:none;
+}
+
+#explainAccommodationsContainer{
+  display:none;
+}
+
+#explainServiceContainer{
+  display:none;
+}
+
+#explainOtherContainer{
+  display:none;
+}
+
+#commentArrivalContainer{
+  display:none;
+}
+
+#rateExperience{
+  display:none;
+}
+
+#badTimeText{
+    display:none;
+}
+
+#okTimeText{
+    display:none;
+}
+
+#greatTimeText{
+    display:none;
+}
+
+
+.resultsText{
+  clear:both;
+  background-color: rgba(255, 255, 255, .8);
+  width:30%;
+  min-width: 250px;
+      -webkit-border-radius: 5%;
+  border-radius: 5%;
+  float:right;
+  color:#333;
+  padding: 15px 50px 15px 50px;
+  margin-top:20px;
+
+}
+
+.resultsText p{
+  text-align:left;
+  font-size:15px;
+  line-height: 25px;
+}
+
+#choosePath input{
+  font-size:1.5em;
+
+}
+
+
+.rateStay {
+  color:#fff;
+  font-size: 9em;
+  background-color: rgba(174, 174, 174, .4);
+  border-style:none;
+  width: 250px;
+  padding: 50px 0;
+  margin:30px .5%;
+  float:left;
+  display:inline-block;
+  font-weight:300;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px
+    -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.rateStay:hover{
 	background-color: #fff;
 	color: #04b1ad;
 }
+
+.chooseActivities{
+  width:250px;
+  padding:50px 0;
+  color:#fff;
+  background-color: rgba(174, 174, 174, .4);
+  font-size: 9em;
+  border-style:none;
+  margin:30px .5%;
+  float:left;
+  display:inline-block;
+  font-weight:300;
+  -webkit-border-radius: 5%;
+  border-radius: 5% 
+}
+
 
 footer{
 		clear:both;
@@ -49,62 +277,342 @@ footer{
 
 #sd-logo{
 	float:right;
-  margin: 30px 5% 10px 0;
+  margin: 8% 5% 10px 0;
 }
 
-@media (max-width: 630px) {
-button {
+#sd-logo2{
+  clear:both;
+  text-align:center;
+  margin: 10px auto 0 auto;
+  display:block;
+}
+
+#sd-logo2 img{
+width:20%;
+margin:0 auto;
+display:block;
+padding-top:15px;
+}
+
+
+.explain-box{
+ width:60%;
+ height: 200px;
+ font-size:22px;
+ padding:10px;
+ font-family:lato;
+ color:#333
+}
+
+.submitExplain{
+  width:40%;
+  height:50px;
+  color:#fff;
+  font-size: 2em;
+  background-color: rgb(174, 174, 174);
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  margin-top:10px;
+  border-style:none;
+}
+
+.submitExplain:hover{
+  background-color: #fff;
+  color: #04b1ad;
+  cursor:pointer;
+}
+
+#questionArrival input{
+  font-size:3em;
+}
+
+#submitActivitiesList{
+  width:40%;
+  height:50px;
+  color:#fff;
+  font-size: 2em;
+  background-color: rgb(174, 174, 174);
+  margin-top:10px;
+  border-style:none;
+      -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+#submitActivitiesList:hover{
+  background-color: #fff;
+  color: #04b1ad;
+}
+
+.selected{
+  background-color:#dfe1ba;
+   color:#fff;
+  font-size: 9em;
+  border-style:none;
+  width: 250px;
+  padding: 50px 0;
+  margin:30px .5%;
+  float:left;
+  display:inline-block;
+  font-weight:300;
+  -webkit-border-radius: 5%;
+  border-radius: 5%
+}
+
+  #favoriteActivities button{
+  clear:both;
+  display:block;
+  width: 515px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+  #submit {
+    display:none;
+    clear:both;
+    text-align: center;
+  }
+
+input:disabled {
+  display:none;
+}
+
+#finalButtons{
+  clear:both;
+  display:block;
+  margin: 10px auto;
+  text-align:center;
+  width:100%;
+  border-radius: 5px;
+
+}
+
+.downloadBrochure{
+  clear:both;
+  display:block;
+  width:90%;
+  margin: 10px auto;
+  text-align: center;
+  border:1px solid #04B1AD;
+  border-radius: 5%;
+  color:#fff;
+  padding:10px ;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.downloadBrochure a{
+display:inline-block;
+text-decoration: none;
+color:#04B1AD;
+padding:7px 33% 7px 33%;
+}
+
+.downloadBrochure:hover{
+background-color:#edeaea;
+}
+
+@media screen and (max-width: 1260px){
+  input:nth-child(4n){
+    clear:both;
+  }
+
+}
+
+@media screen and (max-width: 630px) {
+.rateStay {
    position: relative;
-    width: 40%;
-    min-width:100px;
-    padding-top:15px;
-    padding-bottom: 30%;
-    float: left;
-    height:0;
-	font-size:6em;
-	margin-right: 5%;
+  width: 40%;
+  min-width:200px;
+  padding-top:10%;
+  padding-bottom: 20%;
+  float: left;
+  height:0;
+	font-size:3em;
+  margin: 10px 5% 0 0;
 
 }
 
-  #sd-logo{
+.explain-box{
+  width:100%;
+  margin:0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:nth-child(even){
+clear:both;
+
+}
+
+#sd-logo{
+  text-align:center;
+  float:none;
+  }
+
+  #sd-logo img{
+    width:20%;
+  }
+
+    #sd-logo2{
     text-align:center;
     float:none;
+    width:100%;
+  }
+
+    #sd-logo2 a{
+    text-decoration: none;
+  }
+
+  #sd-logo2 img{
+    width:20%;
+    min-width:75px;
+    padding-bottom: 17px;
   }
   
   #logo-container{
     text-align:center;
   }
+
+  #logo-container img{
+    display:block;
+    margin: 20px auto;
+  }
+
   
   img {
     margin:30px auto;
     width:40%;
   }
 
+#provideName input{
+  clear:both;
+  display:block;
+  width:50%;
 }
 
-@media (max-width: 450px) {
-button {
-    width: 100%;
-    max-width:100%;
+#provideName button{
+  width:50%;
+     webkit-border-radius:5px;
+  border-radius:5px;
+
+
+}
+
+.results{
+  display:block;
+  clear:both;
+  float:none;
+  text-align: center;
+  width:90%;
+  margin: 20px auto;
+
+}
+
+.resultsText{
+  clear:both;
+  float:none;
+  width:90%;
+  min-width: 175px;
+  padding: 15px 5% 0 5%;
+  margin:0 auto;
+  display:center;
+}
+
+#favoriteActivities button{
+  width:82%;
+  margin-left:0;
+    webkit-border-radius:5px;
+  border-radius:5px;
+
+  margin: 10px;
+
+}
+
+.chooseActivities{
+  width:40%;
+  height:40%;
+  padding:1% 0;
+  color:#fff;
+  font-size: 3em;
+  background-color: rgba(174, 174, 174, .4);
+  border-style:none;
+  margin:10px 2%;
+  float:left;
+  display:inline-block;
+  font-weight:300;
+  -webkit-border-radius: 5%;
+  border-radius: 5% 
+}
+
+.selected{
+  background-color:#dfe1ba;
+  width:40%;
+  height:40%;
+  padding:1% 0;
+  color:#fff;
+  font-size: 3em;
+  border-style:none;
+  margin:10px 2%;
+  float:left;
+  display:inline-block;
+  font-weight:300;
+  -webkit-border-radius: 5%;
+  border-radius: 5% 
+}
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+  #wrapper{
+    width:100%;
+  }
+
+.rateStay {
+    width: 90%;
+    max-width:90%;
+    min-width:250px;
+    min-height:115px;
     float: none;
-	font-size:6em;
-	margin: 10px 5% 0 0;
-	padding-bottom:40%;
-
+	font-size:4em;
+	margin: 10px 0 0 0;
+	padding-bottom:20px;
+  padding-top:20px;
+-webkit-appearance: none;
 }
+
+
 
   #sd-logo{
+    text-align:center;
+    float:none;
+  }
+
+    #sd-logo2{
     text-align:center;
     float:none;
   }
   
   #logo-container{
     text-align:center;
+    display:block;
+    margin: 0 auto;
+    padding: 0;
   }
   
   img{
-    margin:30px auto;
-    width:50%;
+    width:40%;
   }
 
   section{
@@ -115,4 +623,27 @@ button {
     font-size:30px;
   }
 
+
+#choosePath input{
+  font-size:2em;
+  padding:10px 10px;
 }
+
+.submitExplain{
+  width:100%;
+  margin: 10px 0 0 0;
+}
+
+.explain-box{
+  width:100%;
+  margin:0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+
+}
+
+
